@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponpes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+               <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Selamat Datang di Website Kami</h1>
+                <p>Jelajahi informasi tentang Ponpes</p>
+                <a href="#kontak" class="btn">Kontak Kami</a>
+                <a href="#galeri" class="btn-2">Lihat Galeri</a>
+            </div>
+        </section>
+
+        <section id="profil">
+            <section class="profile-section">
+                <div class="profile-container">
+                    <div class="profile-image">
+                        <img src="img/logo.png" alt="Profil">
+                    </div>
+                    <div class="profile-info">
+                        <h1>Pondok Pesantren</h1>
+                        <p>Pondok Pesantren Al-Zhaf berdiri pada tanggal 14 November 2020 M/ 28 Rabi'ul Awal 1442 H. Pondok Pesantren Al-Zhaf berlokasi di Kelurahan Gumawang, Kecamatan Wiradesa, Kabupaten Pekalongan, Provinsi Jawa Tengah.
+                            Pondok Pesantren Al-Zhaf selain berfokus menjadi lembaga pendidikan keagamaan juga saat ini mengelola lembaga pendidikan SMP SMA Unggulan dengan mengintegrasikan kürikulum Kemenag, Pesantren Salafiyah, dan Tahfidz Al Qur’an. Dengan didukung oleh lingkungan yang asri, Pondok Pesantren Al-Zhaf berupaya untuk mencetak manusia yang muttafaqoh fiddin untuk menjadi kader pemimpin umat/bangsa, selalu mengupayakan terciptanya pendidikan santri yang memiliki jiwa keikhlasan, kesederhanaan, kemandirian, ukhuwah Islamiyah, kebebasan berfikir dan berperilaku atas dasar Al-Quran dan Sunnah Rasulullah SAW untuk meningkatkan taqwa kepada Allah SWT.
+                            </p>
+                        <a href="#kontak" class="btn">Kontak Kami</a>
+                       </div>
+                </div>
+            </section>
+            </section>
+
+        <section id="galeri">
+            <section class="gallery-section">
+                <h1>Galeri Kami</h1>
+                <div class="gallery-container">
+                    <div class="gallery-item">
+                        <img src="img/gambar1.jpeg" alt="Gambar 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/gambar2.jpeg" alt="Gambar 2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/gambar3.jpeg" alt="Gambar 3">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/gambar4.jpeg" alt="Gambar 4">
+                    </div>
+                    
+                </div>
+            </section>
+            </section>
+
+        <section id="kontak">
+            <section class="contact-section">
+                <h1>Kontak Kami</h1>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h2>Informasi Kontak</h2>
+                        <p>Email: alfianazra@gmail.com</p>
+                        <p>Telepon: +6285965544578</p>
+                        <p>Alamat: Jl. Mayjend Soetoyo, Kel. Gumawang, Kec. Wiradesa, Pekalongan</p>
+                    </div>
+                    <form class="contact-form">
+                        <h2>Kirim Pesan</h2>
+                        <label for="name">Nama:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message">Pesan:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <button type="submit" class="btn">Kirim</button>
+                    </form>
+                </div>
+            </section>
+    </main>
+
+    <footer>
+        <p>@ Alfian Azra Raihan</p>
+    </footer>
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
